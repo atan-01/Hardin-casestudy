@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="socials.css">
+        <script src="social.js"></script>
+    </head>
+    <body>
+        <nav>
+            <img src="pictures/hardin_bg.png" class="logo">
+            <ul> <!--ul = unordered list, li = list element-->
+                <li><a href="gardening.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="socials.html">Contact us</a></li>
+            </ul>
+            <input type="button" class="btn" value="Log out" onclick="logout()">
+        </nav>
+        <div class="containers">
+            <div class="box1">
+                <div class="header">
+                    How can we help you?
+                </div>
+                <div class="subheader">
+                    Tell us your concerns, suggestions, and messages.
+                </div>
+                <form class="u_container" onsubmit="submitmessage(event)">
+                    <div class="u_info">
+                        Name:
+                    </div>
+                    <input type="text" id="name" required>
+                    <div class="u_info">
+                        Subject:
+                    </div>
+                    <input type="text" id="subject" required>
+                    <div class="u_info">
+                        Your message:
+                    </div>
+                    <textarea class="message" required></textarea> <br>
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+            </div>
+            <div class="box2">
+                <div class="header2">
+                    Get the latest updates!
+                </div>
+                <div class="subheader" style="color: black;">
+                    Follow our socials for flash sales, new items, and more!
+                </div>
+                <div class="list">
+                    <div class="media">
+                        <img src="pictures/facebook.png">
+                        <div class="site"> facebook.com/hardinPH </div>
+                    </div>
+                    <div class="media">
+                        <img src="pictures/twitter.png">
+                        <div class="site"> @hardinPH </div>
+                    </div>
+                    <div class="media">
+                        <img src="pictures/instagram.png">
+                        <div class="site"> @hardin.ph </div>
+                    </div>
+                    <div class="media">
+                        <img src="pictures/email.png">
+                        <div class="site"> hardinco@gmail.com </div>
+                    </div>
+                    <div class="media">
+                        <img src="pictures/call.png">
+                        <div class="site"> (969)555-1022 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="f_address">
+                #32 Santolan, Pasig City <hr>
+                915 965 0859<br>
+                (969)555-1022
+            </div>
+            <span class="copyright">© 2024 Copyright: Hardin.ph</span>
+            <div class="socials">
+                <img src="pictures/facebook.png" class="s_logo" onclick="socials()">
+                <img src="pictures/twitter.png" class="s_logo" onclick="socials()">
+                <img src="pictures/social.png" class="s_logo" onclick="socials()">
+                <img src="pictures/email.png" class="s_logo" style="padding-right: 50px;" onclick="socials()">
+            </div>
+        </div>
+    </body>
+</html>

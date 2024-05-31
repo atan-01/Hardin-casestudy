@@ -1,0 +1,139 @@
+body {
+    background-image: url('pictures/about_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(158, 208, 174, 0.5);
+    background-blend-mode: overlay; /* Blends the background color with the image */
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    margin: 30px 0px; /*top bottom, left right*/
+    background-color: rgba(144, 225, 144, 0.254);
+}
+
+.logo{
+    width: 180px;
+    padding-left: 70px;
+}
+
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: rgb(2, 44, 4);
+    font-size: 25px;
+    margin: 10px, 20px;
+}
+
+.btn{
+    margin-right: 50px;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(0, 31, 4);
+    border-radius: 15px;
+    height: 30px ;
+    width: 150px;
+}
+
+.header{
+    font-size: 70px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 100px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contents{
+    height: 470px;
+    width: 370px;
+    margin-top: 100px;
+    text-align: center;
+    border: 1px solid;
+    background-color: rgba(191, 217, 187, 0.631);
+    margin: 100px 20px;
+}
+
+.contents img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding-top: 20;
+}
+
+hr { /*horizontal rule - this css class is only to set its length, pede ka maglagay horizontal line with just <hr>*/
+    width: 200px;
+    margin: 30px auto;
+}
+.text{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6; /*space sa gitna ng lines ng text*/
+}
+
+.bottom{
+    margin: 80px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.footer{
+    width: auto;
+    height: 150px;
+    background-color: rgb(187, 214, 187);
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_address{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 25px;
+}
+
+.f_line{
+    height: 2px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+.footer .socials .s_logo{
+    padding-top: 55px;
+    height: 40px;
+    width: 40px;
+    padding-left: 20px;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 90px;
+}

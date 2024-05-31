@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="about.css">
+        <script>
+            function socials(){
+                window.location.href="socials.html"
+            }
+            function logout(){
+                window.location.href = "index.html";
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <img src="pictures/hardin_bg.png" class="logo">
+            <ul> <!--ul = unordered list, li = list element-->
+                <li><a href="gardening.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="socials.html">Contact us</a></li>
+            </ul>
+            <input type="button" class="btn" value="Log out" onclick="logout()">
+        </nav>
+        <div class="header">
+            About us
+        </div>
+        <div class="container">
+            <div class="contents">
+                <img src="pictures/satisfaction.jpg"> <hr>
+                <div class="text">
+                    At <span style="color: green;">HARDIN</span>, your satisfaction is our top <br> 
+                    priority. We're here to support you every <br>step of the way, offering expert advice, <br>
+                    responsive customer service, and a <br>hassle-free shopping experience.
+                </div>
+            </div>
+            <div class="contents">
+                <img src="pictures/community.png"> <hr>
+                <div class="text">
+                    We believe in the power of <span style="color: green;">COMMUNITY</span><br>
+                    and knowledge-sharing. Join us on<br>social media, participate in our<br>
+                    workshops, and read our blog for gardening tips and inspiration.
+                </div>
+            </div>
+            <div class="contents">
+                <img src="pictures/SustainabilityinLinenRental.jpg"> <hr>
+                <div class="text">
+                    We are dedicated to sustainable <br> gardening practices. Our products <br>
+                    include <span style="color: green;">ECO-FRIENDLY</span> options, and we <br>
+                    strive to minimize our environmental footprint.
+                </div>
+            </div>
+            <div class="contents">
+                <img src="pictures/contactus.avif"> <hr>
+                <div class="text">
+                    Have questions or need assistance?<br> We're here to help!
+                    Contact us at <span style="color: green;">hardin@gmail.com</span> or visit our contact <br>
+                    page for more information.
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <hr>
+            We appreciate you stopping by HARDIN, the starting point for your gardening adventure.<br> 
+            Driven by our love for nature and commitment to sustainable practices, we offer everything <br>
+            you need to cultivate and care for your ideal garden. From top-notch tools and materials <br> 
+            to a wide array of seeds, we're here to support gardeners at every level. Our team is dedicated to <br> 
+            providing expert advice, exceptional customer service, and a seamless shopping experience. <br> 
+            Join our thriving community and grow alongside us. Together, let's bring beauty, sustainability,<br> 
+            and joy to every garden. <br> <br> 
+        
+            Thank you for choosing HARDIN. Happy gardening!
+            
+            <hr>
+        </div>
+        <div class="footer">
+            <div class="f_address">
+                #32 Santolan, Pasig City <hr class="f_line">
+                915 965 0859<br>
+                (969)555-1022
+            </div>
+            <span class="copyright">© 2024 Copyright: Hardin.ph</span>
+            <div class="socials">
+                <img src="pictures/facebook.png" class="s_logo" onclick="socials()">
+                <img src="pictures/twitter.png" class="s_logo" onclick="socials()">
+                <img src="pictures/social.png" class="s_logo" onclick="socials()">
+                <img src="pictures/email.png" class="s_logo" style="padding-right: 50px;" onclick="socials()">
+            </div>
+        </div>
+    </body>
+</html>

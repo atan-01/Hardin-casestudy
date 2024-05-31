@@ -1,0 +1,202 @@
+body{
+    background-image: url('pictures/socialsbg.png');
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    margin: 30px 0px; /*top bottom, left right*/
+    background-color: rgba(144, 225, 144, 0.506);
+}
+
+.logo{
+    width: 180px;
+    padding-left: 70px;
+}
+
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: rgb(2, 44, 4);
+    font-size: 25px;
+    margin: 10px, 20px;
+}
+
+.btn{
+    margin-right: 50px;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(0, 31, 4);
+    border-radius: 15px;
+    height: 30px ;
+    width: 150px;
+}
+
+.containers{
+    margin-top: 150px;
+    display: flex;
+}
+
+.box1{
+    width: 600px;
+    height: 800px;
+    margin-left: 360;
+    background-color: rgb(24, 61, 27);
+    z-index: 1;
+    border: 1px solid;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);/* 20px to the right, 10px below, 20px radius*/
+}
+
+.box2{
+    width: 600px;
+    height: 800px;
+    left: 560;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    border: 1px solid;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.header{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    z-index: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header2{
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    z-index: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subheader{
+    font-family: monospace;
+    font-size: 13px;
+    color: white;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+.u_info{
+    color: white;
+    padding-left: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.message{
+    margin-left: 60px;
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+input[type="text"]{
+    margin-left: 60px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.submit{
+  margin-left: 60px;
+  margin-top: 30px;
+  width: 100px;
+  height: 40px;  
+  background-color: rgb(200, 230, 200);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.media{
+    display: flex;
+    margin-left: 60;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.media img{
+    width: 70px;
+    height: 70px;
+}
+
+.media .site{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+
+.footer{
+    width: auto;
+    height: 150px;
+    background-color: rgb(187, 214, 187);
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_address{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 25px;
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+.footer .socials .s_logo{
+    padding-top: 55px;
+    height: 40px;
+    width: 40px;
+    padding-left: 20px;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 90px;
+}

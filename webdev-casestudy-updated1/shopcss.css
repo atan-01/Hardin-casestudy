@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body{
+    background-image: url('pictures/shopbg.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(173, 227, 173, 0.424);
+    background-blend-mode: overlay;
+}
+
+.container.active{
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    margin: 30px 0px; /*top bottom, left right*/
+    background-color: rgba(144, 225, 144, 0.254);
+}
+
+.logo{
+    width: 180px;
+    padding-left: 70px;
+}
+
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: rgb(2, 44, 4);
+    font-size: 25px;
+    margin: 10px, 20px;
+}
+
+.btn{
+    margin-right: 50px;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(0, 31, 4);
+    border-radius: 15px;
+    height: 30px ;
+    width: 150px;
+}
+
+.shoppingcart{
+    height: 90px;
+    width: 90px;
+    position: fixed;
+    display: flex;
+    filter: drop-shadow(0 10px 10px #000000);
+    left: 1780px;
+    top: 800px;
+    background-image: url('pictures/shoppingcart.png');
+    background-size: 90px;
+    border-radius: 20px;
+}
+
+.count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    bottom: 90px;
+    right: 25px;
+    border-radius: 50px;
+}
+
+.box{
+    width: 90%;
+    height: 1250px;
+    background-color: rgba(234, 234, 234, 0.705);
+    margin-left: 100px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    border-radius: 50px;
+}
+
+.box h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+.category{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(185, 215, 185);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.boxcontainer{
+    display: flex;
+    align-items: center;
+}
+
+.prodcontainer{
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    background-color: rgb(143, 176, 130);
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 60px;
+    text-align: center;
+    transition: 0.5s; /*in here so scale down has transition too*/
+    position: relative; /*u decides the position nut affects other element*/
+}
+
+.containerpic{
+    margin-top: 20px;
+    width: 280px;   
+    height: 280px;
+    align-self: center;
+    border-radius: 20px;
+}
+
+.prodcontainer:hover{
+    transform: scale(1.1);
+
+}
+
+.name{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 40px;
+    padding-right:40px;
+    font-size: 14px;
+}
+
+.buy{
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 45px;
+    background-color: rgb(1, 44, 1);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.tab{
+    font-weight: 300;
+    background-color: #003103;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 500px;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: -600px;
+    bottom: 0;  
+}
+
+body.showcart .tab{
+    right: 0px;
+}
+
+.tab .listtab{
+    height: 670px;
+    padding: 0 10px;
+    text-align: center;
+    border-radius:10px; 
+    overflow: auto;
+}
+
+.tab .listtab .tabheader{
+    display: grid;
+    grid-template-columns: 80px 140px 55px 138px 1fr; /*fr = flexible sizing, fraction of available space*/
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+    background-color: #0c270f;
+    padding-top: 10px;
+}
+
+.tab .listtab .items{
+    display: grid;  
+    padding: 20px 0;
+    grid-template-columns: 80px 100px 30px 1fr;
+    gap: 20px; /*for grid*/
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.tab .listtab .items:nth-child(even) {
+    background-color: #113814;
+}
+
+.tab h1{
+    padding: 20px;
+}
+
+.btncart{
+    text-align: center;
+}
+
+.cartbtn{
+    display: flex;
+    width: 500px;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tabimg img{
+    width: 70%;
+}
+
+.quantity{
+    justify-content: space-between;
+}
+
+.quantity .quantityadd{
+    margin: 0 10px;
+}
+
+.quantity .quantitysubtract{
+    margin: 0 10px;
+}
+
+.quantity .remove{
+    color: white;
+    background-color: red;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.total{
+    text-align: left;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: #002503;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+}
+
+.checkoutcontainer{
+	background-image: url('pictures/check.png');
+    width: 900px;
+    height: 550px;
+    background-color: aqua;
+    position: fixed;
+    top: -100%;
+    left: 510px;
+}
+
+.shopinfo {
+	font-family: 'Roboto', serif;
+	position: fixed;
+	width: 30%;
+	margin-left: 20%;
+	margin-top:5%;
+}
+
+.amt {
+	font-weight: bold;
+	color: #205732;
+	margin-bottom:15px;
+}
+
+.meth {
+	color: white;
+	background-color: #436C26;
+	padding: 5px;
+	width: 126px;
+	border-radius: 3px;
+}
+
+.pay{
+	width: 15px;
+}
+
+.payimg img{
+    width: 130px;
+}
+
+.perinfos {
+	margin-left: 10%;
+	font-family: 'Roboto', serif;
+	color: #205732;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.right {
+	position: relative;
+	margin-left: 32%;
+	width: 100%;
+	top: -1px;
+	display: inline-block
+}
+
+.left {
+	width: 85%;
+	position: absolute;
+}
+
+.whole input[type="text"]{
+	width: 500px;
+	position: relative;
+}
+
+input[type="text"], input[type="tel"] { /* style of inputs */
+	font-family: 'Roboto', serif;
+    width: 30%;
+    padding: 10px;
+	border: 0px;
+    border: 2px solid #205732;
+    border-radius: 3px;
+	background-color: white;
+}
+
+body.checkout .checkoutcontainer{
+    top: 18%;
+}
+
+.checkoutbuttons{
+    height: 35px;
+    width: 80px;
+    text-align: center;
+    margin-right: 10px;
+    color: white;
+    background-color: #002503;
+}
+
+.footer{
+    width: auto;
+    height: 150px;
+    background-color: rgb(187, 214, 187);
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_address{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 25px;
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+.footer .socials .s_logo{
+    padding-top: 55px;
+    height: 40px;
+    width: 40px;
+    padding-left: 20px;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 90px;
+}

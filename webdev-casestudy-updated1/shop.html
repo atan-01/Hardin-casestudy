@@ -1,0 +1,324 @@
+<html>
+    <head>
+        <script src="gardenscript.js" defer></script>
+        <link rel="stylesheet" href="shopcss.css">
+    </head>
+    <body class="">
+            <div class="container" id="blur">
+            <nav>
+                <img src="pictures/hardin_bg.png" class="logo">
+                <ul> <!--ul = unordered list, li = list element-->
+                    <li><a href="gardening.html">Home</a></li>  
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="socials.html">Contact</a></li>
+                </ul>
+                <input type="button" class="btn" value="Log out" onclick="logout()">
+            </nav>
+            <div>
+            <input type="button" class="shoppingcart" onclick="showcart()">
+            <div class="count"><span>0</span></div>
+            </div>
+            <div class="box" style="height: 1400px;">
+                <h1>Shop</h1>
+                <div class="category">‣ Tools</div>
+                    <div class="boxcontainer">
+                        <div class="prodcontainer">
+                            <img src="pictures/handtrowel.jpg" class="containerpic">
+                            <div class="name">Hand Trowel</div>
+                            <div class="info">Used for digging small holes, transplanting seedlings, and loosening soil.</div>
+                            <input type="button" class="buy" value="₱28.00" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/wateringcan.avif" class="containerpic">
+                            <div class="name">Watering Can</div>
+                            <div class="info">Essential for watering plants.</div>
+                            <input type="button" value="₱180.00" class="buy" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/gardenfork.jpg" class="containerpic">
+                            <div class="name">Garden Fork</div>
+                            <div class="info">For turning and aerating soil.</div>
+                            <input type="button" value="₱250.50" class="buy" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/shovel.jpg" class="containerpic">
+                            <div class="name">Shovel</div>
+                            <div class="info">Useful for digging, lifting, and moving soil, compost, or mulch.</div>
+                            <input type="button" value="₱410.00" class="buy" onclick="addtocart(event)">
+                        </div>
+                    </div>
+                    <div class="boxcontainer">
+                        <div class="prodcontainer">
+                            <img src="pictures/rake.jpg" class="containerpic">
+                            <div class="name">Garden Rake</div>
+                            <div class="info">Used for leveling soil, spreading mulch, and removing debris.</div>
+                            <input type="button" value="₱325.75" class="buy" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/pruning shears.jpg" class="containerpic">
+                            <div class="name">Pruning Shears</div>
+                            <div class="info">For cutting stems, branches, and dead foliage.</div>
+                            <input type="button" value="₱430.00" class="buy" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/hoe.webp" class="containerpic">
+                            <div class="name">Garden Hoe</div>
+                            <div class="info">For weeding and cultivating soil.</div>
+                            <input type="button" value="₱300.50" class="buy" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/gardenscissors.webp" class="containerpic">
+                            <div class="name">Garden Scissors</div>
+                            <div class="info">Handy for precise trimming and deadheading flowers.</div>
+                            <input type="button" value="₱89.00" class="buy" onclick="addtocart(event)">
+                        </div>
+                    </div>
+            </div>
+            <div class="box">
+                    <div class="category">‣ Materials</div>
+                    <div class="boxcontainer">
+                        <div class="prodcontainer">
+                            <img src="pictures/gloves.webp" class="containerpic">
+                            <div class="name">Garden Gloves</div>
+                            <div class="info">Protect hands from thorns, blisters, and dirt.</div>
+                            <input type="button" value="₱40.50" class="buy" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/mulch.png" class="containerpic">
+                            <div class="name">Mulch (1 kg)</div>
+                            <div class="info">Helps retain moisture, suppress weeds, and regulate soil temperature.</div>
+                            <input type="button" value="₱213.00" class="buy" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/seedstartingtrays.webp" class="containerpic">
+                            <div class="name">Seed Starting Tray</div>
+                            <div class="info">For starting seeds indoors before transplanting them outdoors.</div>
+                            <input type="button" value="₱15.00" class="buy" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/plantmarkers.jpg" class="containerpic">
+                            <div class="name">Plant Markers (100pcs)</div>
+                            <div class="info">Used to label plants for easy identification.</div>
+                            <input type="button" value="₱70.00" class="buy" onclick="addtocart(event)">
+                        </div>
+                    </div>
+                    <div class="boxcontainer">
+                        <div class="prodcontainer">
+                            <img src="pictures/gardentwines.webp" class="containerpic">
+                            <div class="name">Garden Twines</div>
+                            <div class="info">Used for staking plants, training vines, and securing branches.</div>
+                            <input type="button" value="₱35.00" class="buy" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/compostbin.webp" class="containerpic">
+                            <div class="name">Compost Bin</div>
+                            <div class="info">Essential for creating nutrient-rich soil amendments.</div>
+                            <input type="button" value="₱475.75" class="buy" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/soiltestingkit.jpg" class="containerpic">
+                            <div class="name">Soil Testing Kit</div>
+                            <div class="info">Helps determine soil pH, nutrient levels, and composition.</div>
+                            <input type="button" value="₱1,025.00" class="buy" onclick="addtocart(event)">
+                        </div>
+                        <div class="prodcontainer">
+                            <img src="pictures/gardensprayer.jpg" class="containerpic">
+                            <div class="name">Garden Sprayer</div>
+                            <div class="info">For applying fertilizers, pesticides, or herbicides.</div>
+                            <input type="button" value="₱229.00" class="buy" onclick="addtocart(event)">
+                        </div>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="category">Seeds - Vegetables</div>
+                <div class="boxcontainer">
+                    <div class="prodcontainer">
+                        <img src="pictures/eggplantseeds.webp" class="containerpic">
+                        <div class="name">Eggplant</div>
+                        <div class="info">40 seeds</div>
+                        <input type="button" value="₱20.00" class="buy" onclick="addtocart(event)">
+                    </div>
+                    <div class="prodcontainer">
+                        <img src="pictures/bittergourdseeds.webp" class="containerpic">
+                        <div class="name">Bitter Gourd</div>
+                        <div class="info">10 grams (65-75 seeds)</div>
+                        <input type="button" value="₱153.00" class="buy" onclick="addtocart(event)">
+                    </div>
+                    <div class="prodcontainer">
+                        <img src="pictures/tomatoseeds.jpg" class="containerpic">
+                        <div class="name">Tomato</div>
+                        <div class="info">80 seeds</div>
+                        <input type="button" value="₱25.00" class="buy" onclick="addtocart(event)">
+                    </div>
+                    <div class="prodcontainer">
+                        <img src="pictures/broccoliseeds.jpg" class="containerpic">
+                        <div class="name">Broccoli</div>
+                        <div class="info">140 seeds</div>
+                        <input type="button" value="₱50.00" class="buy" onclick="addtocart(event)">
+                    </div>
+                </div>
+                <div class="boxcontainer">
+                    <div class="prodcontainer">
+                        <img src="pictures/carrotseeds.png" class="containerpic">
+                        <div class="name">Carrot</div>
+                        <div class="info">30 seeds</div>
+                        <input type="button" value="₱8.00" class="buy" onclick="addtocart(event)">
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="category">Seeds - Flowers</div>
+                <div class="boxcontainer">
+                    <div class="prodcontainer">
+                        <img src="pictures/sunflowerseeds.jpg" class="containerpic">
+                        <div class="name">Sunflower</div>
+                        <div class="info">60-100 mixed variety sunflower seeds</div>
+                        <input type="button" value="₱110.62" class="buy" onclick="addtocart(event)">
+                    </div>
+                    <div class="prodcontainer">
+                        <img src="pictures/marigoldseeds.jpg" class="containerpic">
+                        <div class="name">Marigold</div>
+                        <div class="info">100 mixed french marigold seeds</div>
+                        <input type="button" value="₱40.00" class="buy" onclick="addtocart(event)">
+                    </div>
+                    <div class="prodcontainer">
+                        <img src="pictures/poppyseeds.jpg" class="containerpic">
+                        <div class="name">Poppy</div>
+                        <div class="info">100 grams</div>
+                        <input type="button" value="₱205.60" class="buy" onclick="addtocart(event)">
+                    </div>
+                    <div class="prodcontainer">
+                        <img src="pictures/candytuftseeds.webp" class="containerpic">
+                        <div class="name">Candy Tuft</div>
+                        <div class="info">100 mixed rocket candytuft seeds</div>
+                        <input type="button" value="₱218.00" class="buy" onclick="addtocart(event)">
+                    </div>
+                </div>
+                <div class="boxcontainer">
+                    <div class="prodcontainer">
+                        <img src="pictures/morninggloryseeds.jpg" class="containerpic">
+                        <div class="name">Morning Glory</div>
+                        <div class="info">160 seeds</div>
+                        <input type="button" value="₱158.77" class="buy" onclick="addtocart(event)">
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="f_address">
+                    #32 Santolan, Pasig City <hr>
+                    915 965 0859<br>
+                    (969)555-1022
+                </div>
+                <span class="copyright">© 2024 Copyright: Hardin.ph</span>
+                <div class="socials">
+                    <img src="pictures/facebook.png" class="s_logo" onclick="socials()">
+                    <img src="pictures/twitter.png" class="s_logo" onclick="socials()">
+                    <img src="pictures/social.png" class="s_logo" onclick="socials()">
+                    <img src="pictures/email.png" class="s_logo" style="padding-right: 50px;" onclick="socials()">
+                </div>
+            </div>
+        </div>
+        <div class="tab">
+            <h1>Shopping Cart</h1>
+            <div class="listtab">
+                <div class="tabheader">
+                    <span>Image</span>
+                    <span>Name</span>
+                    <span>Price</span>
+                    <span>Quantity</span>
+                    <span style="padding-right: 15px;">Delete</span>
+                </div>
+                <!--<div class="items">     where the items class is placed (created from js)
+                    <tabimg>
+                    <itemname>
+                    <itemprice>
+                    <div quantity>
+                        <quantityadd>
+                        <itemquantity>
+                        <quantitysubtract>
+                        <remove>
+                    <div>
+                </div> -->
+            </div>
+            <div class="total">
+                <span> Total:  ₱</span>
+                <span class="totalprice">0</span>
+            </div>
+            <div class="cartbtn">
+                <input type="button" style="color: black;" value="Close" class="cartbtn" onclick="showcart()">
+                <input type="button" style="background-color: rgb(123, 80, 0); color: white;" value="Check out" class="cartbtn" onclick="checkout()">
+            </div>
+        </div>
+        <div class="checkoutcontainer">
+		  <img src="pictures/hardin_bg.png" class="logo">
+				<form class="perinfos" action="">
+					<div class="left">
+						<label for="firstName">First Name</label><br>
+						<input type="text" id="firstName" name="firstName" required><br><br>
+						<div class="whole">
+							<label for="streetAddress">Address</label><br>
+							<input type="text" id="streetAddress" name="streetAddress" required><br><br>
+						</div>
+						<label for="contactNumber">Contact Number</label><br>
+						<input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+						<input type="submit" value="Submit" class="checkoutbuttons">
+					    <input type="button" value="Cancel" onclick="checkout()" class="checkoutbuttons">
+					</div>
+					<div class="right">
+						<label for="lastName">Last Name</label><br>
+						<input type="text" id="lastName" name="lastName" required><br>
+					</div>
+			</form>
+			<div class="shopinfo">
+				<p class="meth">Payment Method</p>
+            <div style="display: flex;">
+                <div style="display: flex;">
+                <input type="radio" name="method" class="pay" id="gcash" required>
+                <label for="gcash" class="payimg">
+                    <img src="pictures/Gcash.png">
+                </label>
+                </div>
+
+                <div style="display: flex;">
+                <input type="radio" name="method" class="pay" id="paypal" required>
+                <label for="paypal" class="payimg">
+                    <img src="pictures/Ppal.png">
+                </label>
+                </div>
+
+                <div style="display: flex;">
+                <input type="radio" name="method" class="pay" id="visa" required>
+                <label for="visa" class="payimg">
+                    <img src="pictures/Visa.png">
+                </label>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="display: flex;">
+                <input type="radio" name="method" class="pay" id="mcard" required>
+                <label for="mcard" class="payimg">
+                    <img src="pictures/Mcard.png">
+                </label>
+                </div>
+                
+                <div style="display: flex;">
+                <input type="radio" name="method" class="pay" id="maya" required>
+                <label for="maya" class="payimg">
+                    <img src="pictures/Maya.png">
+                </label>
+                </div>
+
+                <div style="display: flex;">
+                    <input type="radio" name="method" class="pay" id="cod" required>
+                    <label for="cod" class="payimg">
+                        <img src="pictures/Cash on.png">
+                    </label>
+                </div>
+            </div>
+				<p class="amt">Total Amount Fee:</p>
+                <p class="amountfee">0</p>
+			</div>
+        </div>
+    </body>
+</html>

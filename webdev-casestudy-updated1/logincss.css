@@ -1,0 +1,45 @@
+body {
+    background-image: url('pictures/HARDIN.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.flex-box {
+    margin-top: 225px;
+    margin-left: 200px;
+    width: 350px;
+    height: 500px;
+    background:
+        linear-gradient(rgba(0, 80, 4, 0.729),rgb(0, 29, 12));
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-right: 250px;
+    text-align: justify;
+}
+
+.textline {
+    background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    padding: 3px 10px;
+    font-size: 20px;
+    display: flex;
+}
+
+.buttondesign {
+    background: #576b59;
+    height: 40px;
+    width: 150px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 55px;
+}
