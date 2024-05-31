@@ -279,7 +279,7 @@ body.showcart .tab{
 }
 
 .checkoutcontainer{
-	background-image: url('pictures/check.png');
+	background-image: url(pictures/Check.png);
     width: 900px;
     height: 550px;
     position: fixed;
