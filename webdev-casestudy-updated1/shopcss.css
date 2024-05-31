@@ -282,7 +282,6 @@ body.showcart .tab{
 	background-image: url('pictures/check.png');
     width: 900px;
     height: 550px;
-    background-color: aqua;
     position: fixed;
     top: -100%;
     left: 510px;
